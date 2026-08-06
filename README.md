@@ -17,8 +17,8 @@ identifying pivotal turns by the marginal revision between consecutive belief st
 sparse outcome supervision into dense turn-level credit, is fully compatible with standard policy
 optimization (e.g. GRPO), and requires **no value network and no extra rollouts**.
 
-We evaluate AgentOPSD on **ALFWorld**, **WebShop**, and **Search-QA** with Qwen2.5 (3B/7B) and
-Qwen3 (1.7B), where it improves over GRPO and strong self-distillation baselines.
+We evaluate AgentOPSD on **ALFWorld**, **WebShop**, and **Search-QA** with Qwen2.5 (3B/7B),
+where it improves over GRPO and strong self-distillation baselines.
 
 ## Citation
 

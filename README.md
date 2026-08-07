@@ -22,12 +22,15 @@ where it improves over GRPO and strong self-distillation baselines.
 
 ## Citation
 
-<!-- TODO: finalize on release -->
+
 ```bibtex
-@article{TODO_agentopsd,
-  title  = {AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning},
-  author = {TODO},
-  journal= {arXiv preprint arXiv:TODO},
-  year   = {2026}
+@misc{wang2026agentopsdrecursiveselfdistillationagentic,
+      title={AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning}, 
+      author={Zi-Han Wang and Zhengxi Lu and Zhiyuan Yao and Jinyang Wu and Jie Wu and Zhengzhou Cai and Yueqing Sun and Ziang Ye and Linji Hao and Qi Gu and Xunliang Cai and Yongliang Shen and Yujiu Yang},
+      year={2026},
+      eprint={2608.05987},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2608.05987}, 
 }
 ```

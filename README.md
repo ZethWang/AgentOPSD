@@ -137,17 +137,8 @@ bash examples/agentopsd_trainer/run_search_3b.sh
 bash examples/agentopsd_trainer/run_webshop_3b.sh
 ```
 
-Each script runs the full method (`belief_mult` + `signed`). Remove the
-`+algorithm.opsd.signed=true` line to run the unsigned variant. Key knobs are exposed at the top
-of every script (`v0_prior`, `mult_lambda`, `granularity`, `skill_all`).
-
-**Naming note.** The public/paper name is **AgentOPSD**; the implementation is internally named
-`opsd` — the entry point is `verl.trainer.main_opsd`, the trainer is `OPSDRayTrainer`, and the
-config namespace is `algorithm.opsd.*`. To re-brand run/experiment names in one place, set:
-
-```bash
-export AGENTOPSD_METHOD_NAME=AgentOPSD   # used for experiment_name prefixes and log banners
-```
+Hyperparameters are exposed at the top of every script. In the code the method is named `opsd`
+(`verl.trainer.main_opsd`, `algorithm.opsd.*`).
 
 Baselines used in the paper (GRPO, Skill-GRPO, OPSD, GRPO+OPSD, Skill-SD, RLSD, and the SDAR
 method) are also provided under `examples/` for reproduction.

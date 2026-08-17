@@ -34,13 +34,8 @@ The resulting reweighting is fully compatible with standard policy optimization 
 requires **no value network and no extra rollouts**.
 
 <div align="center">
-  <img src="docs/agentopsd/method.png" alt="method" style="width:95%;">
+  <img src="docs/agentopsd/method.png" alt="method" style="width:100%;">
 </div>
-
-**Left:** the agent loop interacting with the environment. **Middle:** AgentOPSD aggregates token
-gaps into a turn-level gap, recursively updates the belief state, and turns the marginal revision
-between consecutive beliefs into turn credit. **Right:** GRPO broadcasts one sequence-level
-advantage to every token; AgentOPSD's turn-level advantage is added on top.
 
 ## 📖 Results
 
@@ -48,17 +43,8 @@ AgentOPSD improves over GRPO and strong self-distillation baselines on **ALFWorl
 and **Search-QA** with Qwen2.5 (3B / 7B).
 
 <div align="center">
-  <img src="docs/agentopsd/dynamics.png" alt="training dynamics" style="width:95%;">
+  <img src="docs/agentopsd/dynamics.png" alt="training dynamics" style="width:100%;">
 </div>
-
-Qwen2.5-7B-Instruct on ALFWorld. **Left:** validation success rate. **Middle:** sensitivity to task
-horizon (success rate per extra turn — closer to 0 is more robust). **Right:** policy entropy.
-
-<div align="center">
-  <img src="docs/agentopsd/reward_curve.png" alt="reward curves" style="width:80%;">
-</div>
-
-Reward curves for Qwen2.5-3B / 7B across ALFWorld, WebShop and Search-QA.
 
 ## 🛠️ Installation
 
